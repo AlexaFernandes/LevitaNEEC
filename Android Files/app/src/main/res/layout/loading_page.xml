@@ -55,40 +55,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/levitaneec"
-        app:layout_constraintVertical_bias="0.377"
-        app:srcCompat="@drawable/pot" />
-
-    <ImageView
-        android:id="@+id/glow"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="128dp"
-        android:contentDescription="@string/glow"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="@+id/pot"
-        app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintEnd_toEndOf="@+id/pot"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/pot"
-        app:srcCompat="@drawable/glow" />
-
-    <ImageView
-        android:id="@+id/flower"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="55dp"
-        android:layout_marginEnd="55dp"
-        android:layout_marginBottom="272dp"
-        android:contentDescription="@string/flower"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="@+id/pot"
-        app:layout_constraintDimensionRatio="w,1:1"
-        app:layout_constraintEnd_toEndOf="@+id/pot"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/pot"
-        app:srcCompat="@drawable/flower" />
+        app:layout_constraintVertical_bias="0.377"/>
 
     <ImageView
         android:id="@+id/loading"

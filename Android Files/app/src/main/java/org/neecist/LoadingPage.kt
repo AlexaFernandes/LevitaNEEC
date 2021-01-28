@@ -74,6 +74,7 @@ class LoadingPage : AppCompatActivity() {
                     string = response
                     if (response == "Online and Ready") {
                         startActivity(mainIntent)
+                        finish()
                     }
                 },
                 {
