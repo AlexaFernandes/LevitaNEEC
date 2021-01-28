@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    tools:context=".LoadingPage">
+
+    <ImageView
+        android:id="@+id/levitaneec"
+        android:layout_width="397dp"
+        android:layout_height="253dp"
+        android:layout_marginBottom="468dp"
+        android:contentDescription="@string/levitaneec"
+        app:layout_constraintBottom_toBottomOf="@+id/glow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/levitaneec" />
+
+    <ImageView
+        android:id="@+id/pot"
+        android:layout_width="0dp"
+        android:layout_height="443dp"
+        android:contentDescription="@string/pot"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.501"
+        app:srcCompat="@drawable/pot" />
+
+    <ImageView
+        android:id="@+id/glow"
+        android:layout_width="296dp"
+        android:layout_height="539dp"
+        android:contentDescription="@string/glow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.501"
+        app:srcCompat="@drawable/glow" />
+
+    <ImageView
+        android:id="@+id/flower"
+        android:layout_width="288dp"
+        android:layout_height="477dp"
+        android:contentDescription="@string/flower"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.421"
+        app:srcCompat="@drawable/flower" />
+
+    <ImageView
+        android:id="@+id/loading"
+        android:layout_width="195dp"
+        android:layout_height="64dp"
+        android:contentDescription="@string/loading"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.209"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/levitaneec"
+        app:layout_constraintVertical_bias="0.83"
+        app:srcCompat="@drawable/loading" />
+
+    <ImageView
+        android:id="@+id/circle1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:contentDescription="@string/loading_circle"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toEndOf="@+id/loading"
+        app:layout_constraintTop_toBottomOf="@+id/levitaneec"
+        app:layout_constraintVertical_bias="0.81"
+        app:srcCompat="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/circle2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:contentDescription="@string/loading_circle"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toEndOf="@+id/circle1"
+        app:layout_constraintTop_toBottomOf="@+id/levitaneec"
+        app:layout_constraintVertical_bias="0.81"
+        app:srcCompat="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/circle3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:contentDescription="@string/loading_circle"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.376"
+        app:layout_constraintStart_toEndOf="@+id/circle1"
+        app:layout_constraintTop_toBottomOf="@+id/levitaneec"
+        app:layout_constraintVertical_bias="0.81"
+        app:srcCompat="@drawable/circle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

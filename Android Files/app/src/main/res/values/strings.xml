@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">LevitaNEEC</string>
+    <string name="flower">Flower image</string>
+    <string name="pot">Pot image</string>
+    <string name="glow">Glow image</string>
+    <string name="levitaneec">LEVITANEEC image</string>
+    <string name="loading">Loading image</string>
+    <string name="loading_circle">Loading circle image</string>
+    <string name="popupTitle">Base Não Encontrada</string>
+    <string name="popupDesc">Não foi possível connectar a base do Levitaneec.
+    Verifica que:\n
+        \t•Estás ligado à wifi com o nome "LevitaNEEC - NEEC", criada pela base;\n
+        \t•Tens os dados moveis do telémovel desligados;\n\n
+    Se estiver tudo correto tenta outra vez. Caso o IP da base tenha mudado, clica 5 vezes na flor para inserir um novo IP.</string>
+
+</resources>

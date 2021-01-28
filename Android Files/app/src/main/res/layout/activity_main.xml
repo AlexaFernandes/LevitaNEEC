@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    tools:context=".MainActivity">
+    <!--android:background="@drawable/bg_gradient"-->
+    <ImageView
+        android:id="@+id/levitaneecTitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FF0000"
+        app:layout_constraintDimensionRatio="16:4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/levitaneec2" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/messageInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:textColorHint="#FAFAFA"
+        app:boxStrokeColor="@color/white"
+        app:boxStrokeErrorColor="@color/white"
+        app:counterOverflowTextColor="@color/white"
+        app:endIconTint="@color/white"
+        app:errorIconTint="@color/white"
+        app:errorTextColor="@color/white"
+        app:hintTextColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/send"
+        app:layout_constraintStart_toStartOf="@+id/extraData"
+        app:layout_constraintTop_toBottomOf="@+id/levitaneecTitle"
+        app:startIconTint="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputedText"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="@drawable/input_bg"
+            android:fontFamily="@font/rubik_light"
+            android:hint="Inserir Texto"
+            android:textSize="24sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageButton
+        android:id="@+id/send"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/messageInput"
+        app:layout_constraintDimensionRatio="15:7"
+        app:layout_constraintEnd_toEndOf="@+id/extraData"
+        app:layout_constraintTop_toTopOf="@+id/messageInput"
+        app:srcCompat="@drawable/button" />
+
+    <TextView
+        android:id="@+id/sendText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:text="Enviar"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/send"
+        app:layout_constraintEnd_toEndOf="@+id/send"
+        app:layout_constraintStart_toStartOf="@+id/send"
+        app:layout_constraintTop_toTopOf="@+id/send" />
+
+    <ImageButton
+        android:id="@+id/topArrow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="24dp"
+        android:background="@null"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/bottomArrow"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@+id/centralImage"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@+id/centralImage"
+        app:srcCompat="@drawable/up_button" />
+
+    <ImageButton
+        android:id="@+id/rightArrow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:background="@null"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomArrow"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintStart_toEndOf="@+id/bottomArrow"
+        app:layout_constraintTop_toTopOf="@+id/bottomArrow"
+        app:srcCompat="@drawable/right_button" />
+
+    <ImageButton
+        android:id="@+id/leftArrow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="24dp"
+        android:background="@null"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomArrow"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/bottomArrow"
+        app:layout_constraintTop_toTopOf="@+id/bottomArrow"
+        app:srcCompat="@drawable/left_button" />
+
+    <ImageButton
+        android:id="@+id/bottomArrow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:background="@null"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@id/extraData"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@+id/topArrow"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/topArrow"
+        app:srcCompat="@drawable/down_button" />
+
+    <ImageButton
+        android:id="@+id/extraData"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="7:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/button" />
+
+    <ImageView
+        android:id="@+id/centralImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/topArrow"
+        app:layout_constraintDimensionRatio="10:16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/messageInput"
+        app:srcCompat="@drawable/animated" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
